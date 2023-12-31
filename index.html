@@ -84,7 +84,7 @@ filter: brightness(1);
         background-image: url(tomformobile.jpeg);
         background-position: center center;
         display: flex;
-        justify-content: center;
+        justify-content: start;
     }
     .main{
       height: 120vh;
@@ -96,13 +96,31 @@ filter: brightness(1);
     .cruise{
       font-size: 60px;
     }
-   
+  .header{
+    width: 100vw;
+  padding-top: 30px;
+   }
 
-    .header{display: none;}}
+   .header a{
+    letter-spacing: 2.5px;   
+   }
+  .intro{margin-top: 20px;}
 
-    @media (min-width: 700px) and (max-width: 800px) {.intro{
-    margin-top: 200px;
-  }}
+
+
+    }
+
+    @media (min-width: 600px) and (max-width: 800px) {
+      .intro{
+    margin-top: 100px;
+  }
+  .hi{
+      font-size: 40px;
+      text-shadow: 2px 5px 7px black;
+    }
+
+  .header{width: 100vw;}
+}
 
 @media (min-width: 800px) and (max-width: 1023px) {
   .intro{
@@ -110,7 +128,7 @@ filter: brightness(1);
   }}
 
   .belowmain{
-    width: auto;
+    width: 100vw;
     height: 100vh;
     background-color: #222;
     border: 2px solid #222;
