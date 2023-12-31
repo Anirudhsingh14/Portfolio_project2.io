@@ -6,6 +6,7 @@
   <title>PORTFOLIO</title>
   <style>
 *{margin: 0; padding: 0; box-sizing: border-box;}
+body{background-color: #222;}
     .main{
       width: 100vw;
       height: 120vh;
@@ -61,7 +62,7 @@ filter: brightness(1);
     .cruise{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 76px;
-      font-weight: 900;
+      font-weight: bold;
       text-shadow: 3px 4px 23px black;}
 
     .hi{
@@ -139,11 +140,63 @@ filter: brightness(1);
 
   .belowmain{
     width: 100vw;
-    height: 100vh;
-    background-color: #222;
-    border: 2px solid #222;
-    /*box-shadow: 3px 4px 1px red;*/
+    height: 370px;
+    background-color:#222;
+    /*border: 2px solid white;*/
+    /*box-shadow: 9px 4px 1px red;*/
+    display: flex;
+    flex-direction: row;
   }
+  .leftside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content:space-around  }
+  .about{background-color: rgba(0, 0, 0, 0.284); color: rgba(255, 255, 255, 0.589); width: auto; min-height: 50px; text-align: center ; padding:15px; font-size: 2rem; border-radius: 15px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold; transition: all .4s linear 0s; letter-spacing: 0.8px;}
+
+ .rightside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; align-items: center; justify-content: center; background-image: url(tomforaboutme.jpg); background-size: 637px;background-repeat: no-repeat; background-position: center; position: relative; overflow: hidden; border-top-left-radius: 20px;border-bottom-left-radius:20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);}
+
+ 
+.about:hover {
+font-size: 2.04rem;
+background-color: rgba(255, 255, 255, 0.488); color: black;
+box-shadow: 4px 4px 10px black;
+}
+
+  
+  .leftintro{text-align: center; padding: 10px; color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; }
+  .rightside .overlay{
+    position: absolute; top: 0; left: 0;
+    background-color:rgba(0, 0, 0, 0.711);
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: all 0.2s linear 0s;
+  text-decoration: none;}
+  .rightside:hover .overlay{opacity: 1;}
+ 
+.Connect a{text-decoration: none; color: rgb(255, 255, 255, 0.589); transition: all .3s linear 0s; font-size: 15px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bolder;}
+
+.Connect a:hover{font-size: 15.5px; color: white;}
+
+@media (max-width: 550px) {
+  .leftintro{font-size: 12px; padding: 4px;}
+  .about{font-size: 1.5rem;}
+  .rightside{background-size: 590px; background-position-x: -154px;}
+  .about:hover{font-size: 1.6rem;}
+}
+
+.skills{
+  width: 100%; height: 140%; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; margin-bottom: 40px; margin-top: 10px;
+}
+.skill1{
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399) ; border-radius: 20px; margin: 10px; box-shadow: 0px 0px 20px black;
+}
+.skill2{
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px;
+margin: 10px;}
+.skill3{
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px;
+}
+.skill4{
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px;
+}
+.textskill{color: rgba(255, 255, 255, 0.675); display: flex; align-items: center; justify-content: center; height: 100px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 2.5rem; padding-top: 20px; text-shadow: 2px 2px 5px rgb(0, 0, 0); text-decoration:double; font-weight: bold;}
   </style>
 </head>
 <body>
@@ -152,7 +205,8 @@ filter: brightness(1);
     <div class="submain">
       <nav class="header"><a href="http://google.com">HOME</a>
       <a href="http://google.com">PORTFOLIO</a>
-      <a href="http://google.com">RESUME</a>
+      <a
+       href="http://google.com">RESUME</a>
       <a href="http://#">ABOUT</a>
       <a href="http://#">CONTACT</a></nav>
       <div class="intro">
@@ -163,9 +217,26 @@ filter: brightness(1);
     </div>
   </div>
 </div>
-<section class="belowmain"> 
+<div class="textskill"> SKILLS</div>
+<div class="skills">
+  
+  <div class="skill1">,ccccccc</div>
+  <div class="skill2"></div>
+  <div class="skill3"></div>
+  <div class="skill4"></div>
 
+ 
+</div>
+<section class="belowmain"> 
+<div class="leftside">
+  <div class="about">ABOUT ME</div>
+  <div class="leftintro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse laudantium optio, debitis quae necessitatibus aliquid cum reprehenderit. Facilis ab maxime quod error enim dignissimos veniam voluptatibus animi vitae laborum adipisci, accusantium, quidem nam reiciendis modi. Dolor, tempore, nostrum odio quaerat excepturi quo voluptatem quos deserunt voluptatibus iure, ad temporibus.</div>
+</div>
+<div class="rightside">
+  <div class="overlay"> <nav class="Connect"> <a href="http://instagram.com" >CONTACT ME</a></nav> </div>
+</div>
 </section>  
+<div class="end" style="height: 100vw;">k</div>
 
 </body>
 </html>
