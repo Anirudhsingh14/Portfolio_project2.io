@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+    .main{
+      width: 100vw;
+      height: 225vh;
+    /*  border: 3px solid black;*/
+      display: flex;
+      background-color: black;
+    justify-content: space-evenly;
+    }
+    .submain{
+      width: 100%; height: 58%;
+      background-image: url(tomforpc.jpg);
+      background-blend-mode: lighten;
+      background-size:cover;
+      /*border: 3px solid pink;*/
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .header{
+      width: 45%;
+      display: flex;
+      padding-top: 42px;
+margin-bottom: 200px;
+  justify-content: space-around;
+      align-self: center;
+    }
+
+    .header a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+    .intro{
+      padding-top: 50px;
+      /*border: 3px solid brown;*/
+      color: white;
+      text-align: center;
+      align-self: center;
+      line-height: 46px;
+    }
+  
+    .cruise{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 76px;
+      font-weight: 900;
+      text-shadow: 3px 4px 23px black;
+    }
+
+    .hi{
+      font-size: 64px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 300;
+      text-shadow: 3px 3px 4px black;
+    }
+    .portfolio{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      filter: brightness(0.8);
+      word-spacing: 3px;
+      letter-spacing: 2.4px;
+      text-shadow: 3px 3px 4px black;
+      font-size: 13px;
+    }
+
+    @media (max-width: 500px) {
+    .submain {
+        background-image: url(tomformobile.jpeg);
+        background-position: center center;
+    }
+    .main{
+      height: 180vh;
+    }
+    .hi{
+      font-size: 50px;
+      text-shadow: 2px 5px 7px black;
+    }
+    .Anderson{
+      font-size: 65px;
+    }
+}
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    
+    <div class="submain">
+      <nav class="header">
+      <a href="http://google.com">HOME</a>
+      <a href="http://google.com">PORTFOLIO</a>
+      <a href="http://google.com">RESUME</a>
+      <a href="http://#">ABOUT</a>
+      <a href="http://#">CONTACT</a>
+      </nav>
+      <div class="intro">
+     <span class="hi">Hello, I'm </span> <br> 
+ <span class="cruise">Tom Cruise</span> 
+ <br> <span class="portfolio">AND THIS IS MY PORTFOLIO</span>
+      </div>
+    </div>
+   
+    </div>
+  </div>
+</body>
+</html>
