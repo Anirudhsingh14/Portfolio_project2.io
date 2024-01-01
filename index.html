@@ -48,7 +48,7 @@ margin-bottom: 200px;
 
 .header a:hover{
 font-size: 18px;
-filter: brightness(1);
+color: rgb(195, 243, 123);
 }
 
     .intro{
@@ -150,29 +150,29 @@ filter: brightness(1);
   .leftside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content:space-around  }
   .about{background-color: rgba(0, 0, 0, 0.284); color: rgba(255, 255, 255, 0.589); width: auto; min-height: 50px; text-align: center ; padding:15px; font-size: 2rem; border-radius: 15px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold; transition: all .4s linear 0s; letter-spacing: 0.8px;}
 
- .rightside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; align-items: center; justify-content: center; background-image: url(tomforaboutme.jpg); background-size: 706px;background-repeat: no-repeat; background-position: center; position: relative; overflow: hidden; border-top-left-radius: 20px;border-bottom-left-radius:20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);}
+ .rightside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; align-items: center; justify-content: center; background-image: url(tomforaboutme.jpg); background-size: 637px;background-repeat: no-repeat; background-position: center; position: relative; overflow: hidden; border-top-left-radius: 20px;border-bottom-left-radius:20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);}
 
  
 .about:hover {
 font-size: 2.04rem;
 background-color: rgba(255, 255, 255, 0.488); color: black;
-box-shadow: 4px 4px 10px black;
+box-shadow: 4px 4px 10px rgb(172, 255, 47, 0.482);
 }
 
   
   .leftintro{text-align: center; padding: 10px; color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; }
   .rightside .overlay{
     position: absolute; top: 0; left: 0;
-    background-color:rgba(0, 0, 0, 0.711);
+    background-color: rgba(172, 255, 47, 0.668);
     width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
     opacity: 0; transition: all 0.2s linear 0s;
   text-decoration: none;}
   .rightside:hover .overlay{opacity: 1;}
  
-.Connect a{text-decoration: none; color: rgb(255, 255, 255, 0.589); transition: all .3s linear 0s; font-size: 15px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bolder;}
+.Connect a{text-decoration: none; color: rgba(0, 0, 0, 0.708); transition: all .3s linear 0s; font-size: 15px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bolder;}
 
-.Connect a:hover{font-size: 15.5px; color: white;}
+.Connect a:hover{font-size: 15.5px; color: black; font-weight: bolder;}
 
 @media (max-width: 550px) {
   .leftintro{font-size: 12px; padding: 4px;}
@@ -182,21 +182,31 @@ box-shadow: 4px 4px 10px black;
 }
 
 .skills{
-  width: 100%; height: 140%; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; margin-bottom: 40px; margin-top: 10px;
+  width: 100%; height: 140%; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; margin-bottom: 40px; margin-top: 10px; 
 }
 .skill1{
-  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399) ; border-radius: 20px; margin: 10px; box-shadow: 0px 0px 20px black;
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399) ; border-radius: 20px; margin: 10px;  display: flex; justify-content: center; transition: all 0.3s linear 0s;flex-direction: column; align-items: center;filter: brightness(.68);
 }
+.skill4:hover, .skill3:hover,.skill2:hover , .skill1:hover{box-shadow: 0px 0px 20px rgb(172, 255, 47, 0.482); width: 220px; height: 320px; filter: brightness(1);}
 .skill2{
-  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px;
-margin: 10px;}
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px;display: flex; justify-content: center;flex-direction: column;
+margin: 10px;align-items: center; transition: all 0.3s linear 0s;filter: brightness(.68);}
 .skill3{
-  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px;
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px; display: flex; justify-content: center;transition: all 0.3s linear 0s;flex-direction: column; align-items: center;filter: brightness(.68);
 }
 .skill4{
-  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px;
+  width: 200px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px; display: flex; justify-content: center;align-items: center; flex-direction: column;transition: all 0.3s linear 0s; filter: brightness(.68);
 }
-.textskill{color: rgba(255, 255, 255, 0.675); display: flex; align-items: center; justify-content: center; height: 100px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 2.5rem; padding-top: 20px; text-shadow: 2px 2px 5px rgb(0, 0, 0); text-decoration:double; font-weight: bold;}
+.textskill{color: rgba(255, 255, 255, 0.675); display: flex; align-items: center; justify-content: center; height: 100px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 2.5rem; padding-top: 20px; text-shadow: 2px 2px 5px rgb(0, 0, 0); text-decoration:double; font-weight: bold; transition: all 0.3s linear 0s;}
+.textskill:hover{text-shadow: 2px 2px 6px rgba(172, 255, 47, 0.482);}
+
+#skill1 img{width: 60px;;}
+#skill2 img{width: 40px;margin-top: 12px; background-color: transparent;}
+#skill3 img{width: 40px;margin-top: 12px; }
+#skill4 img{width: 43px;margin-top: 12px; }
+ 
+.skill1intro,.skill2intro,.skill3intro, .skill4intro{ width: 200px; height: 200px;padding: 13px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: 19px; line-height: 20px;}
+
   </style>
 </head>
 <body>
@@ -220,10 +230,26 @@ margin: 10px;}
 <div class="textskill"> SKILLS</div>
 <div class="skills">
   
-  <div class="skill1">,ccccccc</div>
-  <div class="skill2"></div>
-  <div class="skill3"></div>
-  <div class="skill4"></div>
+  <div class="skill1">
+    <div id="skill1"> <img src="coding.png" ></div>
+    <div class="skill1intro"><strong style="font-size: 1.4rem;">SKILL 1 </strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
+    <div></div>
+  </div>
+  <div class="skill2">
+    <div id="skill2"> <img src="clipart100754.png" alt=""></div>
+    <div class="skill2intro"><strong style="font-size: 1.4rem;">SKILL 2</strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
+    <div></div>
+  </div>
+  <div class="skill3">
+  <div id="skill3"><img src="bug.png" alt=""></div>
+  <div class="skill3intro"><strong style="font-size: 1.4rem;">SKILL 3</strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
+  <div></div>
+</div>
+  <div class="skill4">
+  <div id="skill4"> <img src="project-icon.png" alt=""></div>
+  <div class="skill4intro"><strong style="font-size: 1.4rem;">SKILL 4 </strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
+  <div></div>
+</div>
 
  
 </div>
