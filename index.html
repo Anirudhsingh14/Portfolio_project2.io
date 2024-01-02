@@ -17,7 +17,7 @@ body{background-color: #222;}
 
     .submain{
       width: 100%; height: 100%;
-      background-image: url(tomforpc.jpg);
+      background-image: url(Aniforpc1.jpg);
       background-blend-mode: lighten;
       background-size:cover;
       /*border: 3px solid yellow;*/
@@ -31,8 +31,8 @@ body{background-color: #222;}
     .header{
       width: 45%;
       display: flex;
-      padding-top: 42px;
-margin-bottom: 200px;
+      padding-top: 25px;
+margin-bottom: 220px;
   justify-content: space-around;
       align-self: center;}
 
@@ -61,12 +61,12 @@ color: rgb(195, 243, 123);
   
     .cruise{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 76px;
+      font-size: 70px;
       font-weight: bold;
       text-shadow: 3px 4px 23px black;}
 
     .hi{
-      font-size: 64px;
+      font-size: 55px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-weight: 300;
       text-shadow: 3px 3px 4px black;}
@@ -82,16 +82,17 @@ color: rgb(195, 243, 123);
     @media (max-width: 600px) {
     .submain {
       height: 100%;
-        background-image: url(tomformobile.jpeg);
+        background-image: url(Aniformobile.jpg);
         background-position: center center;
         display: flex;
         justify-content: start;
+        background-size: 1300px;
     }
     .main{
-      height: 120vh;
+      height: 114vh;
     }
     .hi{
-      font-size: 40px;
+      font-size: 35px;
       text-shadow: 2px 5px 7px black;
     }
     .cruise{
@@ -103,15 +104,14 @@ color: rgb(195, 243, 123);
    }
 
    .header a{
-    letter-spacing: 2.5px;   
+    letter-spacing: 2.5px; font-size: 12px;  
    }
-  .intro{margin-top: 45%;}
-
+  .intro{margin-top: 40%;}
 
 
     }
 
-    @media (min-width: 600px) and (max-width: 800px) {
+    @media (min-width: 600px) and (max-width: 799px) {
       .intro{
     margin-top: 100px;
   }
@@ -121,6 +121,7 @@ color: rgb(195, 243, 123);
     }
 
   .header{width: 100vw;}
+  .header a{font-size: 13px;}
 }
 
 @media (min-width: 800px) and (max-width: 1023px) {
@@ -133,7 +134,7 @@ color: rgb(195, 243, 123);
 }
 
 .header{
-  margin-bottom: 100px;
+  margin-bottom: 100px; width: 80%;
 }
 
 }
@@ -146,11 +147,13 @@ color: rgb(195, 243, 123);
     /*box-shadow: 9px 4px 1px red;*/
     display: flex;
     flex-direction: row;
+    justify-content: space-between; padding-top: 30px;
   }
-  .leftside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content:space-around  }
+  .leftside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content:space-around; margin-left: 30px;  }
   .about{background-color: rgba(0, 0, 0, 0.284); color: rgba(255, 255, 255, 0.589); width: auto; text-align: center ; padding:15px; font-size: 2rem; border-radius: 15px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold; transition: all .4s linear 0s; letter-spacing: 0.8px;}
 
- .rightside{ /*border: 3px solid white;*/ width: 50%; height: 100%; display: flex; align-items: center; justify-content: center; background-image: url(tomforaboutme.jpg); background-size: 708px;background-repeat: no-repeat; background-position: center; position: relative; overflow: hidden; border-top-left-radius: 20px;border-bottom-left-radius:20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);}
+ .rightside{ /*border: 3px solid white;*/ width: 40%; height: 100%; display: flex; align-items: center; justify-content: center; background-image: url(20231004_201732.jpg); background-size: 708px;background-repeat: no-repeat; background-position: center; position: relative; overflow: hidden; border-top-left-radius: 20px;border-bottom-left-radius:20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);}
+
 
  
 .about:hover {
@@ -160,7 +163,7 @@ box-shadow: 4px 4px 10px rgb(172, 255, 47, 0.482);
 }
 
   
-  .leftintro{text-align: left; padding: 10px; color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; }
+  .leftintro{text-align: left; padding: 10px; color: white; font-family:'Times New Roman', Times, serif, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px;line-height: 20px; letter-spacing: 1px; word-spacing: 1.5px; }
   .rightside .overlay{
     position: absolute; top: 0; left: 0;
     background-color: rgba(172, 255, 47, 0.668);
@@ -177,7 +180,6 @@ box-shadow: 4px 4px 10px rgb(172, 255, 47, 0.482);
 @media (max-width: 550px) {
   .leftintro{font-size: 12px; padding: 4px;}
   .about{font-size: 1.5rem;}
-  .rightside{background-size: 590px; background-position-x: -154px;}
   .about:hover{font-size: 1.6rem;}
 }
 
@@ -185,31 +187,33 @@ box-shadow: 4px 4px 10px rgb(172, 255, 47, 0.482);
   width: 100%; height: 140%; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; margin-bottom: 40px; margin-top: 10px; 
 }
 .skill1{
-  width: 230px; height: 300px; background-color: rgba(255, 255, 255, 0.399) ;box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px;  display: flex; justify-content: center; transition: all 0.3s linear 0s;flex-direction: column; align-items: center;filter: brightness(.68);
+  width: 250px; height: 310px; background-color: rgba(255, 255, 255, 0.399) ;box-shadow: 0px 0px 20px black; border-radius: 10px; margin: 10px;  display: flex; justify-content: center; transition: all 0.3s linear 0s;flex-direction: column; align-items: center;filter: brightness(.68);
 }
-.skill4:hover, .skill3:hover,.skill2:hover , .skill1:hover{box-shadow: 0px 0px 20px rgb(172, 255, 47, 0.482); width: 250px; height: 320px; filter: brightness(1);}
+.skill4:hover, .skill3:hover,.skill2:hover , .skill1:hover{box-shadow: 0px 0px 40px rgba(172, 255, 47, 0.67); width: 260px; height: 330px; background-color: white; color: black;}
 .skill2{
-  width: 230px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px;display: flex; justify-content: center;flex-direction: column; margin: 10px; align-items: center; transition: all 0.3s linear 0s;filter: brightness(.68);}
+  width: 250px; height: 310px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 10px;display: flex; justify-content: center;flex-direction: column; margin: 10px; align-items: center; transition: all 0.3s linear 0s;filter: brightness(.68);}
 .skill3{
-  width: 230px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px; display: flex; justify-content: center;transition: all 0.3s linear 0s;flex-direction: column; align-items: center;filter: brightness(.68);
+  width: 250px; height: 310px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 10px; margin: 10px; display: flex; justify-content: center;transition: all 0.3s linear 0s;flex-direction: column; align-items: center;filter: brightness(.68);
 }
 .skill4{
-  width: 230px; height: 300px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 20px; margin: 10px; display: flex; justify-content: center;align-items: center; flex-direction: column;transition: all 0.3s linear 0s; filter: brightness(.68);
+  width: 250px; height: 310px; background-color: rgba(255, 255, 255, 0.399);box-shadow: 0px 0px 20px black; border-radius: 10px; margin: 10px; display: flex; justify-content: center;align-items: center; flex-direction: column;transition: all 0.2s linear 0s; filter: brightness(.68);
 }
 .textskill{color:  rgba(255, 255, 255, 0.589); display: flex; align-items: center; justify-content: center; height: 100px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 2.5rem; padding-top: 20px; text-shadow: 2px 2px 5px rgb(0, 0, 0); text-decoration:double; font-weight: bold; transition: all 0.3s linear 0s;}
-.textskill:hover{text-shadow: 2px 2px 6px rgba(172, 255, 47, 0.482);}
+.textskill:hover{text-shadow: 3px 3px 36px black;}
 
 #skill1 img{width: 60px;transition: all 0.25s linear 0s;}
 #skill2 img{width: 40px;margin-top: 12px; transition:  all .4s linear 0s;}
 #skill3 img{width: 40px;margin-top: 12px; transition: all 0.25s linear 0s;}
 #skill4 img{width: 43px;margin-top: 12px;transition: all 0.25s linear 0s; }
 
- #skill3 img:hover,#skill4 img:hover,#skill1 img:hover, #skill2 img:hover{transform: rotate(360deg);}
-.skill1intro,.skill2intro,.skill3intro, .skill4intro{ width: 200px; height: 200px;padding: 13px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: 19px; line-height: 20px;}
+ #skill3 img:hover, #skill2 img:hover{transform:rotate(360deg);}
+ #skill1 img:hover, #skill4 img:hover{transform: rotateY(360deg);}
+ 
+.skill1intro,.skill2intro,.skill3intro, .skill4intro{text-shadow: 2px 1px 3px  rgba(255, 255, 255, 0.641); width: 230px; height: 200px;padding: 0px; font-family:'Times New Roman', Times, serif; margin-top: 16px; line-height: 17px; font-weight: 450;}
 
 .cv{ width: 100%;display: flex; justify-content: space-evenly;justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; }
 
-.Hire{ background-color: rgba(175, 242, 75, 0.356); border-radius: 30px;width: 100px; text-align: center; height: auto; color:  rgba(255, 255, 255, 0.589) ;padding: 10px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.Hire{ background-color: rgba(175, 242, 75, 0.356); border-radius: 30px;width: 100px; text-align: center; height: auto; color:  rgba(255, 255, 255, 0.83) ;padding: 10px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
 
 #cv { background-color: rgba(193, 47, 255, 0.356); border-radius: 30px;width: 190px; text-align: center; height: auto;  margin: 14px; padding: 10px; }
 
@@ -217,74 +221,115 @@ box-shadow: 4px 4px 10px rgb(172, 255, 47, 0.482);
 
 #cv:hover{box-shadow: inset 0px 0px 10px rgb(193, 47, 255);}
 .Hire:hover{box-shadow: inset 0px 0px 10px rgb(175, 242, 75);}
-
+.end{margin-top: 30px; display: flex; flex-direction: row; flex-wrap: wrap; height: 100%; justify-content: center;}
+.endright{ width: 625px; height: 69%;margin-top: 20px}
+.endleft{  width: 625px; height: 100%;margin-top: 20px}
+.eduschool{background-color: rgba(128, 128, 128, 0.707); margin: 25px; border-radius: 10px; padding: 20px; height: auto; display: flex; align-items: start; flex-direction: column;}
   </style>
 </head>
 <body>
   <div class="main">
     
-    <div class="submain">
-      <nav class="header"><a href="http://google.com">HOME</a>
+    <div class="submain" id="submain">
+      <nav class="header"><a href="#submain">HOME</a>
       <a href="http://google.com">PORTFOLIO</a>
       <a
        href="http://google.com">RESUME</a>
-      <a href="http://#">ABOUT</a>
+      <a href="#aboutsection">ABOUT</a>
       <a href="http://#">CONTACT</a></nav>
       <div class="intro">
      <span class="hi">Hello, I'm </span> <br> 
-      <span class="cruise">Tom Cruise</span> 
+      <span class="cruise">Anirudh Chauhan</span> 
        <br> <span class="portfolio">AND THIS IS MY PORTFOLIO</span>
       </div>
     </div>
   </div>
 </div>
-<div class="textskill"> SKILLS</div>
+<div class="textskill"> SKILLS</div> 
 <div class="skills">
   
   <div class="skill1">
     <div id="skill1"> <img src="coding.png" ></div>
-    <div class="skill1intro"><strong style="font-size: 1.4rem;">SKILL 1 </strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
-    <div></div>
+    <div class="skill1intro"><strong style="font-size: 1.4rem;">Web Development </strong> <br> <br><p>Proficient in full-stack web development, adept at creating responsive, dynamic websites. Skilled in HTML, CSS, JavaScript, and various frameworks. Experienced in building user-friendly interfaces and optimizing site performance for diverse clients.</p></div>
+
   </div>
   <div class="skill2">
-    <div id="skill2"> <img src="clipart100754.png" alt=""></div>
-    <div class="skill2intro"><strong style="font-size: 1.4rem;">SKILL 2</strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
-    <div></div>
+    <div id="skill2"> <img src="setting.png" alt=""></div>
+    <div class="skill2intro"><strong style="font-size: 1.4rem;"> DBMS </strong> <br> <br><p> Software that organizes, retrieves, and manages data efficiently. While not currently proficient,it allows storing, querying, and manipulating data, pivotal in diverse fields like business, healthcare, and technology for streamlined data handling and informed decision -making.</p></div>
+
   </div>
   <div class="skill3">
   <div id="skill3"><img src="bug.png" alt=""></div>
-  <div class="skill3intro"><strong style="font-size: 1.4rem;">SKILL 3</strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
-  <div></div>
+  <div class="skill3intro"><strong style="font-size: 1.4rem;">Coding</strong> <br> <br><p> Adept at optimizing code efficiency and problem-solving. Capable of optimizing code efficiency, employing sorting and searching algorithms. Experienced in implementing various data structures, leveraging algorithms to tackle complex challenges effectively.</p></div>
+  
 </div>
   <div class="skill4">
   <div id="skill4"> <img src="project-icon.png" alt=""></div>
-  <div class="skill4intro"><strong style="font-size: 1.4rem;">SKILL 4 </strong> <br> <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cumque inventore nam quae incidunt atque.</p></div>
-  <div></div>
-</div>
+  <div class="skill4intro"><strong style="font-size: 1.4rem;">Blender </strong> <br> <br><p>Proficient in foundational use of Blender tools, adept at creating basic 3D models, and familiar with its interface and fundamental tools. Continuously learning and exploring advanced features to enhance skills in modeling and rendering within the Blender environment.</p></div>
 
- 
 </div>
-<section class="belowmain"> 
+</div>
+<section class="belowmain" id="aboutsection"> 
 <div class="leftside">
 
-  <div class="about">ABOUT ME</div>
+  <div class="about" >ABOUT ME</div>
 
-  <div class="leftintro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse laudantium optio, debitis quae necessitatibus aliquid cum reprehenderit. Facilis ab maxime quod error enim dignissimos veniam voluptatibus animi vitae laborum adipisci, accusantium, quidem nam reiciendis modi. Dolor, tempore, nostrum odio quaerat excepturi quo voluptatem quos deserunt voluptatibus iure, ad temporibus.</div>
+  <div class="leftintro"> Hey there! I'm Anirudh Singh Chauhan, a passionate and enthusiastic 2nd-year undergraduate student at Delhi Technological University with a projected graduation year of '26. I am thrilled to share my journey and showcase my skills in the world of technology and problem-solving. Let's collaborate and create unique projects together.
+    </div>
 
   <div class="cv">
     <div class="Hire">HIRE ME</div>
     <div id="cv"> <a href="Anirudh Resume.pdf" target="_blank"> DOWNLOAD CV</a></div>
   </div>
-
 </div>
-
 <div class="rightside">
-  <div class="overlay"> <nav class="Connect"> <a href="http://instagram.com" >CONTACT ME</a></nav> </div>
+  <div class="overlay"> <nav class="Connect"> <a href="mailto: anirudhschauhan14@gmail.com" >CONTACT ME</a></nav> </div>
 </div>
 </section>  
 
 
-<div class="end" style="height: 100vw;"></div>
+
+
+
+<div class="end" >
+  <div class="endleft">
+    <div style="font-size: 30px; color:white; margin-left: 25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Education</div>
+    <div class="eduschool"> <div style="display: flex; justify-content: center;"><img src="date-icon.png" style=" width: 18px; height: 28px; padding-top: 10px; margin-right: 10px;"><strong style="margin-bottom: 10px; margin-top: 15px; color: white; font-size: 13px;"> March 2013 - Present Deacember.</strong> </div>
+   <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"> 
+     <p style="margin-bottom: 8px; font-size: 26px; color: #bac964; ">Delhi Technological University (Formerly DCE)</p>
+     <p style="margin-bottom: 17px; color: rgba(255, 255, 255, 0.451);"> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> 
+    <p style="color: rgba(255, 255, 255, 0.451);"> New Delhi</p> </div></div>
+
+ 
+    <div class="eduschool"> <div style="display: flex; justify-content: center;"><img src="date-icon.png" style=" width: 18px; height: 28px; padding-top: 10px; margin-right: 10px;"><strong style="margin-bottom: 10px; margin-top: 15px; color: white; font-size: 13px;"> March 2013 - Present Deacember.</strong> </div>
+   <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"> 
+     <p style="margin-bottom: 8px; font-size: 27px; color: #bac964; ">Bal Bhavan International School</p>
+     <p style="margin-bottom: 17px; color: rgba(255, 255, 255, 0.451);"> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> 
+    <p style="color: rgba(255, 255, 255, 0.451);"> New Delhi</p> </div></div>
+
+
+    <div class="eduschool"> <div style="display: flex; justify-content: center;"><img src="date-icon.png" style=" width: 18px; height: 28px; padding-top: 10px; margin-right: 10px;"><strong style="margin-bottom: 10px; margin-top: 15px; color: white; font-size: 13px;"> March 2013 - Present Deacember.</strong> </div>
+   <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">  
+    <p style="margin-bottom: 8px; font-size: 27px; color: #bac964; ">Delhi International School</p>
+     <p style="margin-bottom: 17px; color: rgba(255, 255, 255, 0.451);"> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> 
+    <p style="color: rgba(255, 255, 255, 0.451);"> New Delhi</p> </div></div>
+  </div>
+
+  <div class="endright">
+    <div style="font-size: 30px; color:white; margin-left: 25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Experience</div>
+    <div class="eduschool"> <div style="display: flex; justify-content: center;"><img src="date-icon.png" style=" width: 18px; height: 28px; padding-top: 10px; margin-right: 10px;"><strong style="margin-bottom: 10px; margin-top: 15px; color: white; font-size: 13px;"> March 2013 - Present Deacember.</strong> </div>
+      <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">  <p style="margin-bottom: 8px; font-size: 27px; color: #bac964; ">Masteral in Information Technology</p>
+        <p style="margin-bottom: 17px; color: rgba(255, 255, 255, 0.451);"> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> 
+       <p style="color: rgba(255, 255, 255, 0.451);"> New York University</p> </div></div>
+
+       <div class="eduschool"> <div style="display: flex; justify-content: center;"><img src="date-icon.png" style=" width: 18px; height: 28px; padding-top: 10px; margin-right: 10px;"><strong style="margin-bottom: 10px; margin-top: 15px; color: white; font-size: 13px;"> March 2013 - Present Deacember.</strong> </div>
+   <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">  <p style="margin-bottom: 8px; font-size: 27px; color: #bac964; ">Masteral in Information Technology</p>
+     <p style="margin-bottom: 17px; color: rgba(255, 255, 255, 0.451);"> Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> 
+    <p style="color: rgba(255, 255, 255, 0.451);"> New York University</p> </div></div> 
+  </div>
+
+  </div>
+</div>
 
 </body>
 </html>
